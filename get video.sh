@@ -31,7 +31,7 @@ function install_youget() {
 function install_ffmpeg() {
     echo "正在安装ffmpeg..."
     # 根据你的系统使用合适的包管理器命令，这里以 apt 为例
-    sudo apt-get update && sudo apt-get install -y ffmpeg || { echo "ffmpeg 安装失败"; exit 1; }
+    apt-get update && apt-get install -y ffmpeg || { echo "ffmpeg 安装失败"; exit 1; }
     echo "ffmpeg 安装完成"
 }
 
